@@ -122,9 +122,10 @@ textarea {
     border-radius: 8px;
     border-color: silver;
   }
-  /* h1 {
-
-  } */
+  h1 {
+    text-align: center;
+    background-color: aqua;
+  }
   .form {
     align-self: center;
     max-width: 90vw;
