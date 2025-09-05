@@ -83,7 +83,7 @@
 }
 
 span {
-  max-width: 30vw;
+  max-width: max-content;
 }
 
 textarea {
@@ -92,4 +92,54 @@ textarea {
 
 .text-box:hover {
   border-width: 0.12em;
+}
+
+@media (max-width: 440px) {
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    /* background-color: aqua; */
+  }
+  
+  #root {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .text-box {
+    width: 30vw;
+    border-width: 0.05em;
+    border-radius: 8px;
+    border-color: silver;
+  }
+  /* h1 {
+
+  } */
+  .form {
+    max-width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5em;
+    
+  }
+
+  .info-label {
+    text-align: right;
+    /* padding-right: 1em; */
+  }
+
+  .employ-date {
+    width: 20vw;
+    border-width: 0.05em;
+    border-radius: 6px;
+    border-color: silver;
+  }
+
+  .period-span {
+    width: 30vw;
+  }
 }

@@ -74,12 +74,12 @@ export default function AddPracticalExp() {
                     {
                         submitted ? (
                             //the behavior where submitted is in true state
-                            <span>From {pracExperience.start} to {pracExperience.end}</span>
+                            <span className="period-span">From {pracExperience.start} to {pracExperience.end}</span>
                         ): (
                             //the behavior where submitted is in false state
                             <div>
                             <input 
-                            className="text-box"
+                            className="employ-date"
                             type="date" 
                             id="start" 
                             value={pracExperience.start}
@@ -90,9 +90,10 @@ export default function AddPracticalExp() {
                                 })
                             }}
                             />
+                            <br />
                             <span> to </span>
                             <input 
-                            className="text-box"
+                            className="employ-date"
                             type="date" 
                             id="end" 
                             value={pracExperience.end}
