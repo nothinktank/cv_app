@@ -126,10 +126,10 @@ textarea {
   }
   h1 {
     text-align: center;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
   .form {
-    align-self: center;
+    padding: 0 2rem;
     /* max-width: 90vw; */
     /* width: 100%; */
     display: grid;
